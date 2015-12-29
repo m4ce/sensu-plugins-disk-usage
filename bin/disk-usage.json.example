@@ -1,0 +1,7 @@
+{
+  "mountpoints": {
+    "/": {
+      "warn_space": 10
+    }
+  }
+}
