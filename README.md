@@ -45,5 +45,7 @@ JSON example:
 }
 ```
 
+Ideally, you would manage the configuration file via your favourite cfgmgmt tool (e.g. Puppet).
+
 ## Author
 Matteo Cerutti - <matteo.cerutti@hotmail.co.uk>
