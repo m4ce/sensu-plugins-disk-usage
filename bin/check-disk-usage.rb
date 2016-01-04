@@ -108,7 +108,7 @@ class CheckDiskUsage < Sensu::Plugin::Check::CLI
       end
 
       if config[:ignore_mount].size > 0
-        next if config[:ignore_mount].include?(fs.mount_type)
+        next if config[:ignore_mount].include?(fs.mount_point)
       end
 
       if config[:ignore_mount_regex].size > 0
@@ -123,7 +123,7 @@ class CheckDiskUsage < Sensu::Plugin::Check::CLI
       end
 
       if config[:mount].size > 0
-        next unless config[:mount].include?(fs.mount_type)
+        next unless config[:mount].include?(fs.mount_point)
       end
 
       if config[:mount_regex].size > 0
