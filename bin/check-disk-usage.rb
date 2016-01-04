@@ -242,7 +242,7 @@ class CheckDiskUsage < Sensu::Plugin::Check::CLI
       warning if config[:warn]
       critical
     else
-      ok "All mountpoints (#{@mounts.join(', ')}) are OK"
+      ok "All filesystems (#{@mounts.join(', ')}) are OK"
     end
   end
 end
