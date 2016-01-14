@@ -15,6 +15,7 @@ Usage: check-disk-usage.rb (options)
         --crit-inodes <PERCENT>      Critical if PERCENT or more of inodes used
         --crit-space <PERCENT>       Critical if PERCENT or more of disk space used
         --fstype <TYPE>              Comma separated list of file system type(s) (default: all)
+        --handlers <HANDLERS>        Comma separated list of handlers
         --ignore-fstype <TYPE>       Comma separated list of file system type(s) to ignore
         --ignore-mount <MOUNTPOINT>  Comma separated list of mount point(s) to ignore
         --ignore-mount-regex <MOUNTPOINT>
@@ -25,6 +26,8 @@ Usage: check-disk-usage.rb (options)
         --warn-inodes <PERCENT>      Warn if PERCENT or more of inodes used
         --warn-space <PERCENT>       Warn if PERCENT or more of disk space used
 ```
+
+Use the --handlers command line option to specify which handlers you want to use for the generated events.
 
 By default, the warning and critical parameters are global to all mountpoints. However, each mountpoint can override the defaults in an optional JSON configuration file which must be placed
 in the same location as the plugin.
